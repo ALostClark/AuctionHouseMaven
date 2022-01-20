@@ -1,2 +1,2 @@
 # AuctionHouseMaven
-Java project using apache.river as a communication layer
+Java project using Apache River as a communication layer
