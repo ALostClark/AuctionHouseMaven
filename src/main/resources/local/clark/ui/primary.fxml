@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="bpaneRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="865.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="local.clark.controllers.PrimaryController">
+   <center>
+      <Pane fx:id="paneMain" prefHeight="338.0" prefWidth="865.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <Pane fx:id="paneSideBar" prefHeight="297.0" prefWidth="92.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="11.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadAuctionList" prefHeight="40.0" prefWidth="70.0" text="Auction" />
+            <Button layoutX="11.0" layoutY="75.0" mnemonicParsing="false" onAction="#loadNewLotMaker" prefHeight="40.0" prefWidth="70.0" text="Start a lot" />
+            <Button layoutX="11.0" layoutY="125.0" mnemonicParsing="false" onAction="#loadYourLots" prefHeight="40.0" prefWidth="70.0" text="Your Lots" />
+            <Button layoutX="11.0" layoutY="175.0" mnemonicParsing="false" onAction="#addContactInfo" prefHeight="40.0" prefWidth="70.0" text="Contact" />
+            <Button layoutX="11.0" layoutY="225.0" mnemonicParsing="false" onAction="#logOut" prefHeight="40.0" prefWidth="70.0" text="Log out" />
+         </children></Pane>
+   </left>
+   <top>
+      <HBox fx:id="hboxTopBar" prefHeight="42.0" prefWidth="865.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imViewLogo" fitHeight="48.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" text="Auction House" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="394.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="local.clark.controllers.auction.buyer.AuctionBuyersPageController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="10.0" prefWidth="115.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="192.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="257.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="45.0" />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="190.0" minHeight="0.0" prefHeight="183.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label prefHeight="26.0" prefWidth="267.0" text="Lot owner:" GridPane.rowIndex="2" />
+        <Label prefHeight="43.0" prefWidth="268.0" text="Time left:" GridPane.rowIndex="3" />
+        <Label fx:id="auctionCardLBDescription" alignment="TOP_LEFT" prefHeight="180.0" prefWidth="267.0" text="Descrption will be here" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Label prefHeight="61.0" prefWidth="264.0" text="Bid:" GridPane.rowIndex="4" />
+        <Label prefHeight="62.0" prefWidth="270.0" text="Buy out Price:" GridPane.rowIndex="5" />
+        <TextField fx:id="auctionTFBidAmount" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Label prefHeight="28.0" prefWidth="223.0" text="Item name:" GridPane.rowIndex="1" />
+        <Label fx:id="auctionCardLBLotOwner" prefHeight="28.0" prefWidth="252.0" text="Name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label fx:id="auctionCardLBTimeLeft" prefHeight="23.0" prefWidth="165.0" text="00:00" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label fx:id="auctionCardLBBuyOutPrice" prefHeight="28.0" prefWidth="266.0" text="£00.00" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Label alignment="TOP_LEFT" prefHeight="129.0" prefWidth="84.0" text="Descrption:" GridPane.rowIndex="6" />
+        <Label fx:id="auctionCardLBBidAmount" prefHeight="23.0" prefWidth="214.0" text="£00.00" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label fx:id="auctionCardLBItemName" prefHeight="44.0" prefWidth="238.0" text="Item name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button mnemonicParsing="false" onAction="#makeBid" text="Place Bid" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Label prefHeight="17.0" prefWidth="113.0" text="Bid price" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button mnemonicParsing="false" onAction="#buyout" text="Buy out" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label prefHeight="28.0" prefWidth="223.0" text="Item ID:" />
+      <Label fx:id="auctionCardLBLotID" prefHeight="28.0" prefWidth="223.0" text="ID" GridPane.columnIndex="1" />
+    </children>
+
+
+    
+</GridPane>
